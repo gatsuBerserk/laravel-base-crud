@@ -18,7 +18,7 @@
                       <p class="card-text">{{$comic->sale_date}}</p>
                       <p class="card-text">{{ucfirst($comic->type)}}</p>
                       <p class="card-text">{{$comic->price}} €</p> 
-                      <a href="#"><button type="button" class="btn btn-dark">Info</button></a>
+                      <a href="{{ route("comics.show", $comic->id)}}"><button type="button" class="btn btn-dark">Info</button></a>
                     </div>
                   </div>
                 </div>
@@ -26,6 +26,7 @@
         </div>
         @endforeach
     </div>
+    <a href="{{route("comics.create")}}"><button class="btn btn-success">Aggiungi fumetto</button></a>
 </div>
 
 @endsection
