@@ -26,7 +26,10 @@
         </div>
         @endforeach
     </div>
-    <a href="{{route("comics.create")}}"><button class="btn btn-success">Aggiungi fumetto</button></a>
+    <div class="col-12 text-center">
+          <a href="{{route("comics.create")}}"><button class="btn btn-success">Aggiungi fumetto</button></a>
+    </div>
+  
 </div>
 
 @endsection
